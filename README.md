@@ -10,4 +10,4 @@ Looks like we hidden some flags or secrets in the DOM that need to manipulated/d
 
 ### Go App
 I use a mac, and macOS does not have any simple native API to get the color of some window or dock. So we check the system theme and return the hex color of that. On windows it looks like you can set the color of the task bar to the color of your choosing. I would imagine there is some windows API that can return this info. However im not going to take the time to install VirtalBox and test this. Maybe what I hacked together will work!
-Other than that, C# and Swift would be a better choice to do this, seams to have native support. Or some horrible automation library that can grab a screen shot / frame of the task bar and parse the color from that.  
+Other than that, C# and Swift would be a better choice this for this task. Or some horrible automation library that can grab a screen shot / frame of the task bar and parse the color from that.  
