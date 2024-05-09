@@ -11,9 +11,9 @@ import (
 func getMacSysThemeHex() string {
 	// Modern mac has low opacity by default on system applications.
 	// This means the actual color of app windows and status bars is heavily infualced by the background (desktop picture).
-	// These are the closest hard coded values I could fine. No native mac API will give you this info.
+	// These are the closest hard coded values I could find. Looks like no native mac API will give you this info.
 
-	// Ignore error. If not darkmode, this errors since there is nothing to read
+	// Ignore error. If not darkmode, this errors since there is nothing to read. Meaning its light mode
 	res, _ := exec.Command("defaults", "read", "-g", "AppleInterfaceStyle").Output()
 	if strings.Contains(string(res), "Dark") {
 		return "#373039"
