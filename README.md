@@ -1,5 +1,5 @@
 # Notes
-Looks like we hidden some flags or secrets in the DOM that need to manipulated/displayed using the browser window API.
+Looks like some hidden flags or secrets in the DOM that need to manipulated/displayed using the browser window API.
 
 ## Steps.
 
